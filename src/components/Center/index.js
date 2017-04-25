@@ -2,6 +2,7 @@ import React from 'react';
 import Banner from './Banner/BannerComponent';
 import InfoColumn from './Info/InfoColumnComponent';
 import TimelineColumn from './Timeline/TimelineColumnComponent';
+import About from './About';
 import { Route } from 'react-router-dom';
 
 const MainContentComponent = () => {
@@ -14,9 +15,10 @@ const MainContentComponent = () => {
                     <TimelineColumn/>
                 </div>
             }}/>
-            <Route path="/about" render={() => {
-                return <div>Demacia</div>
-            }}/>
+            <Route path="/about" component={About}/>
+            <Route path="/friends" component={About}/>
+            <Route path="/photos" component={About}/>
+            <Route path="/mores" component={About}/>
         </div>
     );
 };

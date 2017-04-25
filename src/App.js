@@ -1,15 +1,26 @@
-import React, { Component } from 'react';
-import './dist/App.css';
+import React, {Component} from 'react';
+import {BrowserRouter as Router} from 'react-router-dom';
+import {createStore, combineReducers} from 'redux';
+import {Provider} from 'react-redux';
+
+import feeds from './stores/Feeds';
+import user from './stores/User';
+
 import PageComponent from './components/PageComponent';
 import icon from './icon.png';
-import { BrowserRouter as Router } from 'react-router-dom';
+import './dist/App.css';
+
+const reducer = combineReducers({user, feeds});
+const store = createStore(reducer);
 
 class App extends Component {
   render() {
     return (
-      <Router className="App">
-        <PageComponent/>
-      </Router>
+      <Provider store={store}>
+        <Router className="App">
+              <PageComponent/>
+        </Router>
+      </Provider>
     );
   }
 }
