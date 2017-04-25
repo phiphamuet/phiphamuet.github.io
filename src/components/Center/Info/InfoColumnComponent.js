@@ -61,14 +61,14 @@ const InfoColumnComponent = () => {
         }
     ];
     return (
-        <div className="main-content__info">
+        <div className="c-info">
             <div className="white-background px-15-padding border-block">
-                <div className="main-content__info__label">
+                <div className="c-info__label">
                     <label>
                         <i className="icon-world-blue "/>
-                        <span className="main-content__info__label-header">Giới thiệu</span>
+                        <span className="c-info__label-header">Giới thiệu</span>
                     </label>
-                    <div className="main-content__info__label-content">non block everything</div>
+                    <div className="c-info__label-content">non block everything</div>
                 </div>
                 {
                     listInfo.map((item, index) =>

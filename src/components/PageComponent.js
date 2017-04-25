@@ -1,6 +1,6 @@
 import React from 'react';
-import Center from './CenterComponent';
-import RightAddon from './RightAddonComponent';
+import Center from './Center';
+import RightAddon from './RightAddon';
 
 const PageComponent = () => {
     return (

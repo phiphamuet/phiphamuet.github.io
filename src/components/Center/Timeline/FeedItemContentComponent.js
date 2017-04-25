@@ -2,11 +2,11 @@ import React from 'react';
 
 const FeedItemContentComponent = ({ message }) => {
     return (
-        <div className="feed-item__content">
-            <div className="feed-item__content__message">
+        <div className="c-feed-item__content">
+            <div className="c-feed-item__message">
                 {message}
             </div>
-            <div className="feed-item__content__action">
+            <div className="c-feed-item__action">
                 <a className="like-container">
                     <i className="like-icon"></i>
                     Thích

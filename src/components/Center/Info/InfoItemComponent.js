@@ -2,7 +2,7 @@ import React from 'react';
 
 const InfoItemComponent = ({icon, label, target, children}) => {
     return (
-        <div className="info-item">
+        <div className="c-info-item">
             <i className={`info-icon ${icon}`}></i>
             <span>
                 {label} {''}

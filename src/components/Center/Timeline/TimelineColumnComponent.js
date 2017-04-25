@@ -61,7 +61,7 @@ const TimeLineColumnComponent = () => {
         }
     ];
     return (
-        <div className="main-content__timeline">
+        <div className="l-feeds">
             {
                 data.map(item =>
                     <FeedItem user={user} {...item} key={item.id}/>
